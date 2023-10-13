@@ -2,7 +2,7 @@
  * CSE 2010 Fall 2023
  * Lab #3
  * Arghyo Chakma #007873847
- * 10/9/2023
+ * 10/13/2023
  *
  * This lab will allow students to create their own class object. 
  * It will allow us to create a class interface with a header file, input member functions within a .cpp file and test the class within a main file.
@@ -44,8 +44,5 @@ int main()
     cout << bob.getName() << endl;
     Person unknown = Person(); //Person unknown; // 
     cout << unknown.getName() << endl;
-
-    cout << bob.getAge() << endl;
-    cout << unknown.getAge() << endl;
 }
 
