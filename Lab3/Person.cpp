@@ -78,6 +78,28 @@ void Person::updateName(string new_name)
 {
     name = new_name;
 }
+/**
+ * @brief changes age to new_age
+ * 
+ * @param new_age (int)
+ */
+void Person::updateAge(int new_age)
+{
+    age = new_age; 
+}
+
+/**
+ * @brief changes occupation to new_occupation
+ * 
+ * @param new_occupation (string)
+ */
+void Person::updateOccupation(string new_occupation)
+{
+    occupation = new_occupation;
+}
+
+
+
 
 /**
  * @brief changes if the person is from the IE to not from the IE 
@@ -87,7 +109,11 @@ void Person::updateName(string new_name)
  */
 void Person::movedLocation()
 {
-
+    if (lives_in_IE == true){
+        lives_in_IE = false;
+    } else {
+        lives_in_IE = true;
+    }
 }
 
 
@@ -99,9 +125,35 @@ void Person::movedLocation()
 string Person::getName() const{
     return name;
 }
+/**
+ * @brief returns age of the Person Objectg
+ * 
+ * @return int 
+ */
+int Person::getAge() const
+{
+    return age; 
+}
+/**
+ * @brief returns occupation of the Person
+ * 
+ * @return string 
+ */
+string Person::getOccupation() const
+{
+    return occupation; 
+}
 
-
-
+/**
+ * @brief returns whether they live in the IE
+ * 
+ * @return true : they live in the IE
+ * @return false : they do not live in the IE
+ */
+bool Person::getLivesInIE() const
+{
+    return lives_in_IE;
+}
 /**
  * @brief Compares the age of person b with the implicit Person class.
  * 
@@ -111,5 +163,9 @@ string Person::getName() const{
  */
 bool Person::isOlderThan(Person b) const
 {
-    return false; // you should modify this
+    if (age > b.getAge()){
+        return true;
+    } else {
+        return false; 
+    }
 }
