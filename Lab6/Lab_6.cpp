@@ -1,13 +1,13 @@
 /***
  * CSE 2010 Fall 2023
- * Lab #{n}
- * {Student Name} #{Coyote ID}
- * {Date}
+ * Lab #6
+ * Arghyo Chakma #007873847
+ * 11/27/23
  *
- * {Description of lab AKA paraphrase "abstract" section from lab}
+ * We will learn how to derive a class from a base class and understand how member functions and variables can be passed down to the derived class. 
+ * Then apply virtual and overloaded functions in order to practice polymorphism.
  *
- * {Describe 1) what was most challenging and 2) how you solved/overcame the problem OR
- * the directions of how you PLAN to solve it}
+ *
  *
 ***/
 
